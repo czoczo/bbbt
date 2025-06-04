@@ -22,3 +22,5 @@ WORKDIR /app
 COPY --chown=nonroot:nonroot --from=go-build /bbb /app/
 
 ENTRYPOINT ["./bbb"]
+
+EXPOSE 8080/tcp
